@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilo.css">
+    <title>Tenis 1.0</title>
+</head>
+<body>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick='carga(this)'>
+                    <div class="contenedor-foto">
+                        <img src="img/1.png" alt="">
+                        <p class="descripcion">NIKE MODELO 1</p>
+                        <span class="precio">$ 799.00</span>
+                    </div>
+                </div>
+                <div class="item" onclick='carga(this)'>
+                    <div class="contenedor-foto">
+                        <img src="img/2.png" alt="">
+                        <p class="descripcion">NIKE MODELO 2</p>
+                        <span class="precio">$ 899.00</span>
+                    </div>
+                </div>
+                <div class="item" onclick='carga(this)'>
+                    <div class="contenedor-foto">
+                        <img src="img/3.png" alt="">
+                        <p class="descripcion">NIKE MODELO 3</p>
+                        <span class="precio">$ 1,799.00</span>
+                    </div>
+                </div>
+                <div class="item" onclick='carga(this)'>
+                    <div class="contenedor-foto">
+                        <img src="img/4.png" alt="">
+                        <p class="descripcion">NIKE MODELO 4</p>
+                        <span class="precio">$ 2,399.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="item" onclick='carga(this)'>
+                    <div class="contenedor-foto">
+                        <img src="img/5.png" alt="">
+                        <p class="descripcion">NIKE MODELO 5</p>
+                        <span class="precio">$ 4,599.00</span>
+                    </div>
+                </div>
+                <div class="item" onclick='carga(this)'>
+                    <div class="contenedor-foto">
+                        <img src="img/6.png" alt="">
+                        <p class="descripcion">NIKE MODELO 6</p>
+                        <span class="precio">$ 12,099.00</span>
+                    </div>
+                </div>
+                <div class="item" onclick='carga(this)'>
+                    <div class="contenedor-foto">
+                        <img src="img/7.png" alt="">
+                        <p class="descripcion">NIKE MODELO 7</p>
+                        <span class="precio">$ 1,699.00</span>
+                    </div>
+                </div>
+                <div class="item" onclick='carga(this)'>
+                    <div class="contenedor-foto">
+                        <img src="img/8.png" alt="">
+                        <p class="descripcion">NIKE MODELO 8</p>
+                        <span class="precio">$ 1,399.00</span>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar"  onclick='cerrar()'>
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+
+                <h2 id="modelo">Nike modelo 1</h2>
+                <p id="descripcion">Descrpción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 799.00</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">SIZE</label>
+                        <select name="" id="">
+                            <option value="">40</option>
+                            <option value="">42</option>
+                            <option value="">44</option>
+                            <option value="">46</option>
+                        </select>
+                    </div>
+                    <button>Agregar al carrito</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
